@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 //Before doing anything, make sure retail resources are decrypted
 //make use of the VOiD Decryptor 
-//slot0x25KeyX.bin = cee7d8ab30c00dae850ef5e382ac5af3
 
 namespace WindowsFormsApplication4
 {
