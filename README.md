@@ -1,1 +1,1 @@
-Program to create commandsfor makerom to use. Can output for CCI and CIA.
+Program to create commands for makerom to use. Can output for CCI and CIA.
