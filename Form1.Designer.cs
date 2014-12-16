@@ -1,4 +1,4 @@
-namespace WindowsFormsApplication4
+﻿namespace WindowsFormsApplication4
 {
     partial class Form1
     {
@@ -55,6 +55,8 @@ namespace WindowsFormsApplication4
             this.label2 = new System.Windows.Forms.Label();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.button9 = new System.Windows.Forms.Button();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -78,6 +80,7 @@ namespace WindowsFormsApplication4
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "CIA";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // button1
             // 
@@ -87,6 +90,7 @@ namespace WindowsFormsApplication4
             this.button1.TabIndex = 2;
             this.button1.Text = "ExHeader";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -94,8 +98,9 @@ namespace WindowsFormsApplication4
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
-            this.button2.Text = ".code";
+            this.button2.Text = ".code/ELF";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -105,6 +110,7 @@ namespace WindowsFormsApplication4
             this.button3.TabIndex = 4;
             this.button3.Text = "Banner";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -114,6 +120,7 @@ namespace WindowsFormsApplication4
             this.button4.TabIndex = 5;
             this.button4.Text = "Icon";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -123,6 +130,7 @@ namespace WindowsFormsApplication4
             this.button5.TabIndex = 6;
             this.button5.Text = "rsf";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // textBox1
             // 
@@ -168,6 +176,7 @@ namespace WindowsFormsApplication4
             this.button6.TabIndex = 12;
             this.button6.Text = "RomFS";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -178,6 +187,7 @@ namespace WindowsFormsApplication4
             this.button7.TabIndex = 13;
             this.button7.Text = "Manual";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -188,6 +198,7 @@ namespace WindowsFormsApplication4
             this.button8.TabIndex = 14;
             this.button8.Text = "Update";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // checkBox1
             // 
@@ -198,6 +209,7 @@ namespace WindowsFormsApplication4
             this.checkBox1.TabIndex = 15;
             this.checkBox1.Text = "Use Manual Partition";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -208,6 +220,7 @@ namespace WindowsFormsApplication4
             this.checkBox2.TabIndex = 16;
             this.checkBox2.Text = "Use Update Partition";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -218,6 +231,7 @@ namespace WindowsFormsApplication4
             this.checkBox3.TabIndex = 17;
             this.checkBox3.Text = "Load RomFS from File";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // textBox6
             // 
@@ -230,7 +244,7 @@ namespace WindowsFormsApplication4
             // textBox7
             // 
             this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(371, 123);
+            this.textBox7.Location = new System.Drawing.Point(371, 120);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(178, 20);
             this.textBox7.TabIndex = 19;
@@ -297,11 +311,27 @@ namespace WindowsFormsApplication4
             this.button9.Text = "Go!";
             this.button9.UseVisualStyleBackColor = true;
             // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(60, 36);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(67, 17);
+            this.checkBox5.TabIndex = 28;
+            this.checkBox5.Text = "Use ELF";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 327);
+            this.Controls.Add(this.checkBox5);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.label2);
@@ -365,6 +395,8 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
