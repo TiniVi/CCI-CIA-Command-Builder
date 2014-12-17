@@ -21,8 +21,9 @@ namespace WindowsFormsApplication4
         }
 
         OpenFileDialog ofd = new OpenFileDialog();
+        SaveFileDialog sfd = new SaveFileDialog();
 
-        //This is where buttons call for file locations
+       //This is where buttons call for file locations
         private void button1_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -262,6 +263,14 @@ namespace WindowsFormsApplication4
                 richTextBox1.AppendText(textBox8.Text);
                 richTextBox1.AppendText(label3.Text);
                 richTextBox1.AppendText(":7 ");
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                textBox9.Text = sfd.FileName;
             }
         }
     }
