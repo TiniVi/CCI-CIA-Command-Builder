@@ -167,36 +167,7 @@ namespace WindowsFormsApplication4
             {
                 textBox1.Enabled = true;
             }
-            if (checkBox5.Checked == true)
-            {
-                checkBox3.Enabled = false;
-            }
-            if (checkBox5.Checked == false)
-            {
-                checkBox3.Enabled = true;
-            }
-            if (checkBox5.Checked == true)
-            {
-                button6.Enabled = false;
-            }
-            if (checkBox5.Checked == false)
-            {
-                if (checkBox3.Checked == true)
-                {
-                    button6.Enabled = true;
-                }
-            }
-            if (checkBox5.Checked == true)
-            {
-                textBox8.Enabled = false;
-            }
-            if (checkBox5.Checked == false)
-            {
-                if (checkBox3.Checked == true)
-                {
-                    textBox8.Enabled = true;
-                }
-            }
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -208,6 +179,89 @@ namespace WindowsFormsApplication4
             if (radioButton2.Checked == false)
             {
                 checkBox4.Enabled = true;
+            }
+        }
+        
+        //Text is copied to the textbox for the output command.
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                if (checkBox4.Checked == true)
+                {
+                    richTextBox1.Text = "makerom -f cci -target d -alignwr ";
+                }
+                else
+                richTextBox1.Text = "makerom -f cci -target d ";
+            }
+
+            if (radioButton2.Checked == true)
+            {
+                richTextBox1.Text = "makerom -f cia -desc app:4 -target d ";
+            }
+            richTextBox1.AppendText("-rsf ");
+            richTextBox1.AppendText(label3.Text);
+            richTextBox1.AppendText(textBox5.Text);
+            richTextBox1.AppendText(label3.Text);
+            richTextBox1.AppendText(" -o ");
+            richTextBox1.AppendText(label3.Text);
+            richTextBox1.AppendText(textBox9.Text);
+            richTextBox1.AppendText(label3.Text);
+            richTextBox1.AppendText(" -exefslogo ");
+            richTextBox1.AppendText("-icon ");
+            richTextBox1.AppendText(label3.Text);
+            richTextBox1.AppendText(textBox4.Text);
+            richTextBox1.AppendText(label3.Text);
+            richTextBox1.AppendText(" -banner ");
+            richTextBox1.AppendText(label3.Text);
+            richTextBox1.AppendText(textBox3.Text);
+            richTextBox1.AppendText(label3.Text);
+            
+            if (checkBox5.Checked == true)
+            {
+                richTextBox1.AppendText(" -elf ");
+                richTextBox1.AppendText(label3.Text);
+                richTextBox1.AppendText(textBox2.Text);
+                richTextBox1.AppendText(label3.Text);
+            }
+            else
+            {
+                richTextBox1.AppendText(" -code ");
+                richTextBox1.AppendText(label3.Text);
+                richTextBox1.AppendText(textBox2.Text);
+                richTextBox1.AppendText(label3.Text);
+            }
+
+            if (checkBox5.Checked == false)
+            {
+                richTextBox1.AppendText(" -exheader ");
+                richTextBox1.AppendText(label3.Text);
+                richTextBox1.AppendText(textBox1.Text);
+                richTextBox1.AppendText(label3.Text);
+            }
+
+            if (checkBox3.Checked == true)
+            {
+                richTextBox1.AppendText(" -romfs ");
+                richTextBox1.AppendText(label3.Text);
+                richTextBox1.AppendText(textBox8.Text);
+                richTextBox1.AppendText(label3.Text);
+            }
+            if (checkBox2.Checked == true)
+            {
+                richTextBox1.AppendText(" -content ");
+                richTextBox1.AppendText(label3.Text);
+                richTextBox1.AppendText(textBox8.Text);
+                richTextBox1.AppendText(label3.Text);
+                richTextBox1.AppendText(":1 ");
+            }
+            if (checkBox1.Checked == true)
+            {
+                richTextBox1.AppendText(" -content ");
+                richTextBox1.AppendText(label3.Text);
+                richTextBox1.AppendText(textBox8.Text);
+                richTextBox1.AppendText(label3.Text);
+                richTextBox1.AppendText(":7 ");
             }
         }
     }
