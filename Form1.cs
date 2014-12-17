@@ -252,7 +252,7 @@ namespace WindowsFormsApplication4
             {
                 richTextBox1.AppendText(" -content ");
                 richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(textBox8.Text);
+                richTextBox1.AppendText(textBox6.Text);
                 richTextBox1.AppendText(label3.Text);
                 richTextBox1.AppendText(":1 ");
             }
@@ -260,7 +260,7 @@ namespace WindowsFormsApplication4
             {
                 richTextBox1.AppendText(" -content ");
                 richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(textBox8.Text);
+                richTextBox1.AppendText(textBox7.Text);
                 richTextBox1.AppendText(label3.Text);
                 richTextBox1.AppendText(":7 ");
             }
