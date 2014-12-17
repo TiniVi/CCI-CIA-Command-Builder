@@ -266,7 +266,7 @@
             this.commandText.Name = "commandText";
             this.commandText.Size = new System.Drawing.Size(442, 111);
             this.commandText.TabIndex = 22;
-            this.commandText.Text = "Click \"Write\" before \"Compute\"";
+            this.commandText.Text = "Click \"Write\"";
             // 
             // outputText
             // 
