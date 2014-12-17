@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApplication4
+﻿namespace CommandBuilder
 {
-    partial class Form1
+    partial class CCCB
     {
         /// <summary>
         /// Required designer variable.
@@ -59,6 +59,7 @@
             this.quotation = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.outputButton = new System.Windows.Forms.Button();
+            this.computeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cciMode
@@ -265,7 +266,7 @@
             this.commandText.Name = "commandText";
             this.commandText.Size = new System.Drawing.Size(442, 111);
             this.commandText.TabIndex = 22;
-            this.commandText.Text = "";
+            this.commandText.Text = "Click \"Write\" before \"Compute\"";
             // 
             // outputText
             // 
@@ -300,7 +301,7 @@
             this.createCommand.Name = "createCommand";
             this.createCommand.Size = new System.Drawing.Size(75, 23);
             this.createCommand.TabIndex = 27;
-            this.createCommand.Text = "Go!";
+            this.createCommand.Text = "Write";
             this.createCommand.UseVisualStyleBackColor = true;
             this.createCommand.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -338,11 +339,23 @@
             this.outputButton.UseVisualStyleBackColor = true;
             this.outputButton.Click += new System.EventHandler(this.outputButton_Click);
             // 
-            // Form1
+            // computeButton
+            // 
+            this.computeButton.Location = new System.Drawing.Point(12, 275);
+            this.computeButton.Name = "computeButton";
+            this.computeButton.Size = new System.Drawing.Size(75, 23);
+            this.computeButton.TabIndex = 31;
+            this.computeButton.Text = "Compute";
+            this.computeButton.UseVisualStyleBackColor = true;
+            this.computeButton.Visible = false;
+            this.computeButton.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // CCCB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 327);
+            this.Controls.Add(this.computeButton);
             this.Controls.Add(this.commandText);
             this.Controls.Add(this.outputButton);
             this.Controls.Add(this.quotation);
@@ -372,7 +385,7 @@
             this.Controls.Add(this.exheaderButton);
             this.Controls.Add(this.ciaMode);
             this.Controls.Add(this.cciMode);
-            this.Name = "Form1";
+            this.Name = "CCCB";
             this.Text = "CCI/CIA Command Builder";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -412,6 +425,7 @@
         private System.Windows.Forms.Label quotation;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button outputButton;
+        private System.Windows.Forms.Button computeButton;
     }
 }
 

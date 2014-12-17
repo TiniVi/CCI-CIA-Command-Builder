@@ -11,11 +11,11 @@ using System.Windows.Forms;
 //Before doing anything, make sure retail resources are decrypted
 //make use of the VOiD Decryptor 
 
-namespace WindowsFormsApplication4
+namespace CommandBuilder
 {
-    public partial class Form1 : Form
+    public partial class CCCB : Form
     {
-        public Form1()
+        public CCCB()
         {
             InitializeComponent();
         }
@@ -209,6 +209,11 @@ namespace WindowsFormsApplication4
             {
                 outputText.Text = sfd.FileName;
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Soon");
         }
     }
 }
