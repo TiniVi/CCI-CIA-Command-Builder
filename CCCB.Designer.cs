@@ -60,6 +60,7 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.outputButton = new System.Windows.Forms.Button();
             this.computeButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cciMode
@@ -350,11 +351,21 @@
             this.computeButton.Visible = false;
             this.computeButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 305);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "By TiniVi";
+            // 
             // CCCB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 327);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.computeButton);
             this.Controls.Add(this.commandText);
             this.Controls.Add(this.outputButton);
@@ -426,6 +437,7 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button outputButton;
         private System.Windows.Forms.Button computeButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 
