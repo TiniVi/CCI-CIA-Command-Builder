@@ -28,350 +28,350 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.cciMode = new System.Windows.Forms.RadioButton();
+            this.ciaMode = new System.Windows.Forms.RadioButton();
+            this.exheaderButton = new System.Windows.Forms.Button();
+            this.codeButton = new System.Windows.Forms.Button();
+            this.bannerButton = new System.Windows.Forms.Button();
+            this.iconButton = new System.Windows.Forms.Button();
+            this.rsfButton = new System.Windows.Forms.Button();
+            this.exheaderText = new System.Windows.Forms.TextBox();
+            this.codeText = new System.Windows.Forms.TextBox();
+            this.bannerText = new System.Windows.Forms.TextBox();
+            this.iconText = new System.Windows.Forms.TextBox();
+            this.rsfText = new System.Windows.Forms.TextBox();
+            this.romfsButton = new System.Windows.Forms.Button();
+            this.manualButton = new System.Windows.Forms.Button();
+            this.updateButton = new System.Windows.Forms.Button();
+            this.useManual = new System.Windows.Forms.CheckBox();
+            this.useUpdate = new System.Windows.Forms.CheckBox();
+            this.useRomFS = new System.Windows.Forms.CheckBox();
+            this.manualText = new System.Windows.Forms.TextBox();
+            this.updateText = new System.Windows.Forms.TextBox();
+            this.romfsText = new System.Windows.Forms.TextBox();
+            this.commandText = new System.Windows.Forms.RichTextBox();
+            this.outputText = new System.Windows.Forms.TextBox();
+            this.commandLabel = new System.Windows.Forms.Label();
+            this.alignwr = new System.Windows.Forms.CheckBox();
+            this.createCommand = new System.Windows.Forms.Button();
+            this.useELF = new System.Windows.Forms.CheckBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label3 = new System.Windows.Forms.Label();
+            this.quotation = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.button10 = new System.Windows.Forms.Button();
+            this.outputButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // cciMode
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 12);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(42, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "CCI";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.cciMode.AutoSize = true;
+            this.cciMode.Location = new System.Drawing.Point(12, 12);
+            this.cciMode.Name = "cciMode";
+            this.cciMode.Size = new System.Drawing.Size(42, 17);
+            this.cciMode.TabIndex = 0;
+            this.cciMode.TabStop = true;
+            this.cciMode.Text = "CCI";
+            this.cciMode.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // ciaMode
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(12, 35);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(42, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "CIA";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.ciaMode.AutoSize = true;
+            this.ciaMode.Location = new System.Drawing.Point(12, 35);
+            this.ciaMode.Name = "ciaMode";
+            this.ciaMode.Size = new System.Drawing.Size(42, 17);
+            this.ciaMode.TabIndex = 1;
+            this.ciaMode.TabStop = true;
+            this.ciaMode.Text = "CIA";
+            this.ciaMode.UseVisualStyleBackColor = true;
+            this.ciaMode.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // button1
+            // exheaderButton
             // 
-            this.button1.Location = new System.Drawing.Point(12, 58);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "ExHeader";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.exheaderButton.Location = new System.Drawing.Point(12, 58);
+            this.exheaderButton.Name = "exheaderButton";
+            this.exheaderButton.Size = new System.Drawing.Size(75, 23);
+            this.exheaderButton.TabIndex = 2;
+            this.exheaderButton.Text = "ExHeader";
+            this.exheaderButton.UseVisualStyleBackColor = true;
+            this.exheaderButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // codeButton
             // 
-            this.button2.Location = new System.Drawing.Point(12, 87);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = ".code/ELF";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.codeButton.Location = new System.Drawing.Point(12, 87);
+            this.codeButton.Name = "codeButton";
+            this.codeButton.Size = new System.Drawing.Size(75, 23);
+            this.codeButton.TabIndex = 3;
+            this.codeButton.Text = ".code/ELF";
+            this.codeButton.UseVisualStyleBackColor = true;
+            this.codeButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // bannerButton
             // 
-            this.button3.Location = new System.Drawing.Point(12, 116);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Banner";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.bannerButton.Location = new System.Drawing.Point(12, 116);
+            this.bannerButton.Name = "bannerButton";
+            this.bannerButton.Size = new System.Drawing.Size(75, 23);
+            this.bannerButton.TabIndex = 4;
+            this.bannerButton.Text = "Banner";
+            this.bannerButton.UseVisualStyleBackColor = true;
+            this.bannerButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // iconButton
             // 
-            this.button4.Location = new System.Drawing.Point(12, 145);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Icon";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.iconButton.Location = new System.Drawing.Point(12, 145);
+            this.iconButton.Name = "iconButton";
+            this.iconButton.Size = new System.Drawing.Size(75, 23);
+            this.iconButton.TabIndex = 5;
+            this.iconButton.Text = "Icon";
+            this.iconButton.UseVisualStyleBackColor = true;
+            this.iconButton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // rsfButton
             // 
-            this.button5.Location = new System.Drawing.Point(12, 174);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "rsf";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.rsfButton.Location = new System.Drawing.Point(12, 174);
+            this.rsfButton.Name = "rsfButton";
+            this.rsfButton.Size = new System.Drawing.Size(75, 23);
+            this.rsfButton.TabIndex = 6;
+            this.rsfButton.Text = "rsf";
+            this.rsfButton.UseVisualStyleBackColor = true;
+            this.rsfButton.Click += new System.EventHandler(this.button5_Click);
             // 
-            // textBox1
+            // exheaderText
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
-            this.textBox1.TabIndex = 7;
+            this.exheaderText.Location = new System.Drawing.Point(94, 60);
+            this.exheaderText.Name = "exheaderText";
+            this.exheaderText.Size = new System.Drawing.Size(178, 20);
+            this.exheaderText.TabIndex = 7;
             // 
-            // textBox2
+            // codeText
             // 
-            this.textBox2.Location = new System.Drawing.Point(94, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 20);
-            this.textBox2.TabIndex = 8;
+            this.codeText.Location = new System.Drawing.Point(94, 89);
+            this.codeText.Name = "codeText";
+            this.codeText.Size = new System.Drawing.Size(178, 20);
+            this.codeText.TabIndex = 8;
             // 
-            // textBox3
+            // bannerText
             // 
-            this.textBox3.Location = new System.Drawing.Point(94, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(178, 20);
-            this.textBox3.TabIndex = 9;
+            this.bannerText.Location = new System.Drawing.Point(94, 118);
+            this.bannerText.Name = "bannerText";
+            this.bannerText.Size = new System.Drawing.Size(178, 20);
+            this.bannerText.TabIndex = 9;
             // 
-            // textBox4
+            // iconText
             // 
-            this.textBox4.Location = new System.Drawing.Point(94, 147);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(178, 20);
-            this.textBox4.TabIndex = 10;
+            this.iconText.Location = new System.Drawing.Point(94, 147);
+            this.iconText.Name = "iconText";
+            this.iconText.Size = new System.Drawing.Size(178, 20);
+            this.iconText.TabIndex = 10;
             // 
-            // textBox5
+            // rsfText
             // 
-            this.textBox5.Location = new System.Drawing.Point(94, 177);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(178, 20);
-            this.textBox5.TabIndex = 11;
+            this.rsfText.Location = new System.Drawing.Point(94, 177);
+            this.rsfText.Name = "rsfText";
+            this.rsfText.Size = new System.Drawing.Size(178, 20);
+            this.rsfText.TabIndex = 11;
             // 
-            // button6
+            // romfsButton
             // 
-            this.button6.Enabled = false;
-            this.button6.Location = new System.Drawing.Point(289, 172);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "RomFS";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.romfsButton.Enabled = false;
+            this.romfsButton.Location = new System.Drawing.Point(289, 172);
+            this.romfsButton.Name = "romfsButton";
+            this.romfsButton.Size = new System.Drawing.Size(75, 23);
+            this.romfsButton.TabIndex = 12;
+            this.romfsButton.Text = "RomFS";
+            this.romfsButton.UseVisualStyleBackColor = true;
+            this.romfsButton.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // manualButton
             // 
-            this.button7.Enabled = false;
-            this.button7.Location = new System.Drawing.Point(289, 68);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "Manual";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.manualButton.Enabled = false;
+            this.manualButton.Location = new System.Drawing.Point(289, 68);
+            this.manualButton.Name = "manualButton";
+            this.manualButton.Size = new System.Drawing.Size(75, 23);
+            this.manualButton.TabIndex = 13;
+            this.manualButton.Text = "Manual";
+            this.manualButton.UseVisualStyleBackColor = true;
+            this.manualButton.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // updateButton
             // 
-            this.button8.Enabled = false;
-            this.button8.Location = new System.Drawing.Point(289, 120);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "Update";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.updateButton.Enabled = false;
+            this.updateButton.Location = new System.Drawing.Point(289, 120);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(75, 23);
+            this.updateButton.TabIndex = 14;
+            this.updateButton.Text = "Update";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.button8_Click);
             // 
-            // checkBox1
+            // useManual
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(289, 45);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(124, 17);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "Use Manual Partition";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.useManual.AutoSize = true;
+            this.useManual.Location = new System.Drawing.Point(289, 45);
+            this.useManual.Name = "useManual";
+            this.useManual.Size = new System.Drawing.Size(124, 17);
+            this.useManual.TabIndex = 15;
+            this.useManual.Text = "Use Manual Partition";
+            this.useManual.UseVisualStyleBackColor = true;
+            this.useManual.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // checkBox2
+            // useUpdate
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(289, 97);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(124, 17);
-            this.checkBox2.TabIndex = 16;
-            this.checkBox2.Text = "Use Update Partition";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.useUpdate.AutoSize = true;
+            this.useUpdate.Location = new System.Drawing.Point(289, 97);
+            this.useUpdate.Name = "useUpdate";
+            this.useUpdate.Size = new System.Drawing.Size(124, 17);
+            this.useUpdate.TabIndex = 16;
+            this.useUpdate.Text = "Use Update Partition";
+            this.useUpdate.UseVisualStyleBackColor = true;
+            this.useUpdate.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // checkBox3
+            // useRomFS
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(289, 149);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(130, 17);
-            this.checkBox3.TabIndex = 17;
-            this.checkBox3.Text = "Load RomFS from File";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            this.useRomFS.AutoSize = true;
+            this.useRomFS.Location = new System.Drawing.Point(289, 149);
+            this.useRomFS.Name = "useRomFS";
+            this.useRomFS.Size = new System.Drawing.Size(130, 17);
+            this.useRomFS.TabIndex = 17;
+            this.useRomFS.Text = "Load RomFS from File";
+            this.useRomFS.UseVisualStyleBackColor = true;
+            this.useRomFS.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // textBox6
+            // manualText
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(371, 68);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(178, 20);
-            this.textBox6.TabIndex = 18;
+            this.manualText.Enabled = false;
+            this.manualText.Location = new System.Drawing.Point(371, 68);
+            this.manualText.Name = "manualText";
+            this.manualText.Size = new System.Drawing.Size(178, 20);
+            this.manualText.TabIndex = 18;
             // 
-            // textBox7
+            // updateText
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(371, 120);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(178, 20);
-            this.textBox7.TabIndex = 19;
+            this.updateText.Enabled = false;
+            this.updateText.Location = new System.Drawing.Point(371, 120);
+            this.updateText.Name = "updateText";
+            this.updateText.Size = new System.Drawing.Size(178, 20);
+            this.updateText.TabIndex = 19;
             // 
-            // textBox8
+            // romfsText
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(371, 172);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(178, 20);
-            this.textBox8.TabIndex = 20;
+            this.romfsText.Enabled = false;
+            this.romfsText.Location = new System.Drawing.Point(371, 172);
+            this.romfsText.Name = "romfsText";
+            this.romfsText.Size = new System.Drawing.Size(178, 20);
+            this.romfsText.TabIndex = 20;
             // 
-            // richTextBox1
+            // commandText
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(107, 207);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(442, 111);
-            this.richTextBox1.TabIndex = 22;
-            this.richTextBox1.Text = "";
+            this.commandText.Location = new System.Drawing.Point(107, 207);
+            this.commandText.Name = "commandText";
+            this.commandText.Size = new System.Drawing.Size(442, 111);
+            this.commandText.TabIndex = 22;
+            this.commandText.Text = "";
             // 
-            // textBox9
+            // outputText
             // 
-            this.textBox9.Location = new System.Drawing.Point(169, 13);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(380, 20);
-            this.textBox9.TabIndex = 23;
-            this.textBox9.Text = "rom";
+            this.outputText.Location = new System.Drawing.Point(169, 13);
+            this.outputText.Name = "outputText";
+            this.outputText.Size = new System.Drawing.Size(380, 20);
+            this.outputText.TabIndex = 23;
+            this.outputText.Text = "rom";
             // 
-            // label2
+            // commandLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 207);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 13);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Output Command";
+            this.commandLabel.AutoSize = true;
+            this.commandLabel.Location = new System.Drawing.Point(9, 207);
+            this.commandLabel.Name = "commandLabel";
+            this.commandLabel.Size = new System.Drawing.Size(89, 13);
+            this.commandLabel.TabIndex = 25;
+            this.commandLabel.Text = "Output Command";
             // 
-            // checkBox4
+            // alignwr
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(12, 223);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(54, 17);
-            this.checkBox4.TabIndex = 26;
-            this.checkBox4.Text = "Card2";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.alignwr.AutoSize = true;
+            this.alignwr.Location = new System.Drawing.Point(12, 223);
+            this.alignwr.Name = "alignwr";
+            this.alignwr.Size = new System.Drawing.Size(54, 17);
+            this.alignwr.TabIndex = 26;
+            this.alignwr.Text = "Card2";
+            this.alignwr.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // createCommand
             // 
-            this.button9.Location = new System.Drawing.Point(12, 246);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 27;
-            this.button9.Text = "Go!";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.createCommand.Location = new System.Drawing.Point(12, 246);
+            this.createCommand.Name = "createCommand";
+            this.createCommand.Size = new System.Drawing.Size(75, 23);
+            this.createCommand.TabIndex = 27;
+            this.createCommand.Text = "Go!";
+            this.createCommand.UseVisualStyleBackColor = true;
+            this.createCommand.Click += new System.EventHandler(this.button9_Click);
             // 
-            // checkBox5
+            // useELF
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(60, 36);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(67, 17);
-            this.checkBox5.TabIndex = 28;
-            this.checkBox5.Text = "Use ELF";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.useELF.AutoSize = true;
+            this.useELF.Location = new System.Drawing.Point(60, 36);
+            this.useELF.Name = "useELF";
+            this.useELF.Size = new System.Drawing.Size(67, 17);
+            this.useELF.TabIndex = 28;
+            this.useELF.Text = "Use ELF";
+            this.useELF.UseVisualStyleBackColor = true;
+            this.useELF.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // label3
+            // quotation
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(115, 210);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(12, 13);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "\"";
+            this.quotation.AutoSize = true;
+            this.quotation.Location = new System.Drawing.Point(115, 210);
+            this.quotation.Name = "quotation";
+            this.quotation.Size = new System.Drawing.Size(12, 13);
+            this.quotation.TabIndex = 29;
+            this.quotation.Text = "\"";
             // 
-            // button10
+            // outputButton
             // 
-            this.button10.Location = new System.Drawing.Point(88, 11);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 30;
-            this.button10.Text = "Output";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.outputButton.Location = new System.Drawing.Point(88, 11);
+            this.outputButton.Name = "outputButton";
+            this.outputButton.Size = new System.Drawing.Size(75, 23);
+            this.outputButton.TabIndex = 30;
+            this.outputButton.Text = "Output";
+            this.outputButton.UseVisualStyleBackColor = true;
+            this.outputButton.Click += new System.EventHandler(this.outputButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 327);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.commandText);
+            this.Controls.Add(this.outputButton);
+            this.Controls.Add(this.quotation);
+            this.Controls.Add(this.useELF);
+            this.Controls.Add(this.createCommand);
+            this.Controls.Add(this.alignwr);
+            this.Controls.Add(this.commandLabel);
+            this.Controls.Add(this.outputText);
+            this.Controls.Add(this.romfsText);
+            this.Controls.Add(this.updateText);
+            this.Controls.Add(this.manualText);
+            this.Controls.Add(this.useRomFS);
+            this.Controls.Add(this.useUpdate);
+            this.Controls.Add(this.useManual);
+            this.Controls.Add(this.updateButton);
+            this.Controls.Add(this.manualButton);
+            this.Controls.Add(this.romfsButton);
+            this.Controls.Add(this.rsfText);
+            this.Controls.Add(this.iconText);
+            this.Controls.Add(this.bannerText);
+            this.Controls.Add(this.codeText);
+            this.Controls.Add(this.exheaderText);
+            this.Controls.Add(this.rsfButton);
+            this.Controls.Add(this.iconButton);
+            this.Controls.Add(this.bannerButton);
+            this.Controls.Add(this.codeButton);
+            this.Controls.Add(this.exheaderButton);
+            this.Controls.Add(this.ciaMode);
+            this.Controls.Add(this.cciMode);
             this.Name = "Form1";
             this.Text = "CCI/CIA Command Builder";
             this.ResumeLayout(false);
@@ -381,37 +381,37 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.RadioButton cciMode;
+        private System.Windows.Forms.RadioButton ciaMode;
+        private System.Windows.Forms.Button exheaderButton;
+        private System.Windows.Forms.Button codeButton;
+        private System.Windows.Forms.Button bannerButton;
+        private System.Windows.Forms.Button iconButton;
+        private System.Windows.Forms.Button rsfButton;
+        private System.Windows.Forms.TextBox exheaderText;
+        private System.Windows.Forms.TextBox codeText;
+        private System.Windows.Forms.TextBox bannerText;
+        private System.Windows.Forms.TextBox iconText;
+        private System.Windows.Forms.TextBox rsfText;
+        private System.Windows.Forms.Button romfsButton;
+        private System.Windows.Forms.Button manualButton;
+        private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.CheckBox useManual;
+        private System.Windows.Forms.CheckBox useUpdate;
+        private System.Windows.Forms.CheckBox useRomFS;
+        private System.Windows.Forms.TextBox manualText;
+        private System.Windows.Forms.TextBox updateText;
+        private System.Windows.Forms.TextBox romfsText;
+        private System.Windows.Forms.RichTextBox commandText;
+        private System.Windows.Forms.TextBox outputText;
+        private System.Windows.Forms.Label commandLabel;
+        private System.Windows.Forms.CheckBox alignwr;
+        private System.Windows.Forms.Button createCommand;
+        private System.Windows.Forms.CheckBox useELF;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label quotation;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button outputButton;
     }
 }
 

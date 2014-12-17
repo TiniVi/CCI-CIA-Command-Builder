@@ -28,7 +28,7 @@ namespace WindowsFormsApplication4
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                textBox1.Text = ofd.FileName;
+                exheaderText.Text = ofd.FileName;
             }
         }
 
@@ -36,7 +36,7 @@ namespace WindowsFormsApplication4
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                textBox2.Text = ofd.FileName;
+                codeText.Text = ofd.FileName;
             }
         }
 
@@ -44,7 +44,7 @@ namespace WindowsFormsApplication4
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                textBox3.Text = ofd.FileName;
+                bannerText.Text = ofd.FileName;
             }
         }
 
@@ -52,7 +52,7 @@ namespace WindowsFormsApplication4
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                textBox4.Text = ofd.FileName;
+                iconText.Text = ofd.FileName;
             }
         }
 
@@ -60,7 +60,7 @@ namespace WindowsFormsApplication4
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                textBox5.Text = ofd.FileName;
+                rsfText.Text = ofd.FileName;
             }
         }
 
@@ -68,7 +68,7 @@ namespace WindowsFormsApplication4
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                textBox8.Text = ofd.FileName;
+                romfsText.Text = ofd.FileName;
             }
         }
 
@@ -76,7 +76,7 @@ namespace WindowsFormsApplication4
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                textBox6.Text = ofd.FileName;
+                manualText.Text = ofd.FileName;
             }
         }
 
@@ -84,193 +84,130 @@ namespace WindowsFormsApplication4
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                textBox7.Text = ofd.FileName;
+                updateText.Text = ofd.FileName;
             }
         }
 
         //Make buttons and textboxes enabled
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
-            {
-                button7.Enabled = true;
-            }
-            if (checkBox1.Checked == false)
-            {
-                button7.Enabled = false;
-            }
-            if (checkBox1.Checked == true)
-            {
-                textBox6.Enabled = true;
-            }
-            if (checkBox1.Checked == false)
-            {
-                textBox6.Enabled = false;
-            }
+            manualButton.Enabled = useManual.Checked;
+            manualText.Enabled = useManual.Checked;
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked == true)
-            {
-                button8.Enabled = true;
-            }
-            if (checkBox2.Checked == false)
-            {
-                button8.Enabled = false;
-            }
-            if (checkBox2.Checked == true)
-            {
-                textBox7.Enabled = true;
-            }
-            if (checkBox2.Checked == false)
-            {
-                textBox7.Enabled = false;
-            }
+            updateText.Enabled = useUpdate.Checked;
+            updateButton.Enabled = useUpdate.Checked;
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox3.Checked == true)
-            {
-                button6.Enabled = true;
-            }
-            if (checkBox3.Checked == false)
-            {
-                button6.Enabled = false;
-            }
-            if (checkBox3.Checked == true)
-            {
-                textBox8.Enabled = true;
-            }
-            if (checkBox3.Checked == false)
-            {
-                textBox8.Enabled = false;
-            }
+            romfsButton.Enabled = useRomFS.Checked;
+            romfsText.Enabled = useRomFS.Checked;
         }
 
         //If an ELF is used:
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox5.Checked == true)
-            {
-                button1.Enabled = false;
-            }
-            if (checkBox5.Checked == false)
-            {
-                button1.Enabled = true;
-            }
-            if (checkBox5.Checked == true)
-            {
-                textBox1.Enabled = false;
-            }
-            if (checkBox5.Checked == false)
-            {
-                textBox1.Enabled = true;
-            }
+            exheaderButton.Enabled = !useELF.Checked;
+            exheaderText.Enabled = !useELF.Checked;
 
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton2.Checked == true)
-            {
-                checkBox4.Enabled = false;
-            }
-            if (radioButton2.Checked == false)
-            {
-                checkBox4.Enabled = true;
-            }
+            alignwr.Enabled = !ciaMode.Checked;
         }
         
         //Text is copied to the textbox for the output command.
         private void button9_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true)
+            if (cciMode.Checked == true)
             {
-                if (checkBox4.Checked == true)
+                if (alignwr.Checked == true)
                 {
-                    richTextBox1.Text = "makerom -f cci -target d -alignwr ";
+                    commandText.Text = "makerom -f cci -target d -alignwr ";
                 }
                 else
-                richTextBox1.Text = "makerom -f cci -target d ";
+                commandText.Text = "makerom -f cci -target d ";
             }
 
-            if (radioButton2.Checked == true)
+            if (ciaMode.Checked == true)
             {
-                richTextBox1.Text = "makerom -f cia -desc app:4 -target d ";
+                commandText.Text = "makerom -f cia -desc app:4 -target d ";
             }
-            richTextBox1.AppendText("-rsf ");
-            richTextBox1.AppendText(label3.Text);
-            richTextBox1.AppendText(textBox5.Text);
-            richTextBox1.AppendText(label3.Text);
-            richTextBox1.AppendText(" -o ");
-            richTextBox1.AppendText(label3.Text);
-            richTextBox1.AppendText(textBox9.Text);
-            richTextBox1.AppendText(label3.Text);
-            richTextBox1.AppendText(" -exefslogo ");
-            richTextBox1.AppendText("-icon ");
-            richTextBox1.AppendText(label3.Text);
-            richTextBox1.AppendText(textBox4.Text);
-            richTextBox1.AppendText(label3.Text);
-            richTextBox1.AppendText(" -banner ");
-            richTextBox1.AppendText(label3.Text);
-            richTextBox1.AppendText(textBox3.Text);
-            richTextBox1.AppendText(label3.Text);
+            commandText.AppendText("-rsf ");
+            commandText.AppendText(quotation.Text);
+            commandText.AppendText(rsfText.Text);
+            commandText.AppendText(quotation.Text);
+            commandText.AppendText(" -o ");
+            commandText.AppendText(quotation.Text);
+            commandText.AppendText(outputText.Text);
+            commandText.AppendText(quotation.Text);
+            commandText.AppendText(" -exefslogo ");
+            commandText.AppendText("-icon ");
+            commandText.AppendText(quotation.Text);
+            commandText.AppendText(iconText.Text);
+            commandText.AppendText(quotation.Text);
+            commandText.AppendText(" -banner ");
+            commandText.AppendText(quotation.Text);
+            commandText.AppendText(bannerText.Text);
+            commandText.AppendText(quotation.Text);
             
-            if (checkBox5.Checked == true)
+            if (useELF.Checked == true)
             {
-                richTextBox1.AppendText(" -elf ");
-                richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(textBox2.Text);
-                richTextBox1.AppendText(label3.Text);
+                commandText.AppendText(" -elf ");
+                commandText.AppendText(quotation.Text);
+                commandText.AppendText(codeText.Text);
+                commandText.AppendText(quotation.Text);
             }
             else
             {
-                richTextBox1.AppendText(" -code ");
-                richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(textBox2.Text);
-                richTextBox1.AppendText(label3.Text);
+                commandText.AppendText(" -code ");
+                commandText.AppendText(quotation.Text);
+                commandText.AppendText(codeText.Text);
+                commandText.AppendText(quotation.Text);
             }
 
-            if (checkBox5.Checked == false)
+            if (useELF.Checked == false)
             {
-                richTextBox1.AppendText(" -exheader ");
-                richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(textBox1.Text);
-                richTextBox1.AppendText(label3.Text);
+                commandText.AppendText(" -exheader ");
+                commandText.AppendText(quotation.Text);
+                commandText.AppendText(exheaderText.Text);
+                commandText.AppendText(quotation.Text);
             }
 
-            if (checkBox3.Checked == true)
+            if (useRomFS.Checked == true)
             {
-                richTextBox1.AppendText(" -romfs ");
-                richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(textBox8.Text);
-                richTextBox1.AppendText(label3.Text);
+                commandText.AppendText(" -romfs ");
+                commandText.AppendText(quotation.Text);
+                commandText.AppendText(romfsText.Text);
+                commandText.AppendText(quotation.Text);
             }
-            if (checkBox2.Checked == true)
+            if (useUpdate.Checked == true)
             {
-                richTextBox1.AppendText(" -content ");
-                richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(textBox6.Text);
-                richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(":1 ");
+                commandText.AppendText(" -content ");
+                commandText.AppendText(quotation.Text);
+                commandText.AppendText(manualText.Text);
+                commandText.AppendText(quotation.Text);
+                commandText.AppendText(":1 ");
             }
-            if (checkBox1.Checked == true)
+            if (useManual.Checked == true)
             {
-                richTextBox1.AppendText(" -content ");
-                richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(textBox7.Text);
-                richTextBox1.AppendText(label3.Text);
-                richTextBox1.AppendText(":7 ");
+                commandText.AppendText(" -content ");
+                commandText.AppendText(quotation.Text);
+                commandText.AppendText(updateText.Text);
+                commandText.AppendText(quotation.Text);
+                commandText.AppendText(":7 ");
             }
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void outputButton_Click(object sender, EventArgs e)
         {
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                textBox9.Text = sfd.FileName;
+                outputText.Text = sfd.FileName;
             }
         }
     }
