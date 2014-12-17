@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Diagnostics;
 
 //Before doing anything, make sure retail resources are decrypted
 //make use of the VOiD Decryptor 
@@ -118,6 +120,7 @@ namespace CommandBuilder
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             alignwr.Enabled = !ciaMode.Checked;
+            fwNumber.Enabled = ciaMode.Checked;
         }
         
         //Text is copied to the textbox for the output command.
@@ -135,7 +138,8 @@ namespace CommandBuilder
 
             if (ciaMode.Checked == true)
             {
-                commandText.Text = "makerom -f cia -desc app:4 -target d ";
+                commandText.Text = "makerom -f cia -desc app:" + fwNumber.Text;
+                commandText.AppendText(" -target d ");
             }
             commandText.AppendText("-rsf ");
             commandText.AppendText(quotation.Text);
@@ -213,7 +217,7 @@ namespace CommandBuilder
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Soon");
+            System.Diagnostics.Process.Start("cmd", "/C" + commandText.Text);
         }
     }
 }

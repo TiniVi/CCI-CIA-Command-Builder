@@ -61,6 +61,8 @@
             this.outputButton = new System.Windows.Forms.Button();
             this.computeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.fwNumber = new System.Windows.Forms.TextBox();
+            this.fwLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cciMode
@@ -263,11 +265,11 @@
             // 
             // commandText
             // 
-            this.commandText.Location = new System.Drawing.Point(107, 207);
+            this.commandText.Location = new System.Drawing.Point(107, 223);
             this.commandText.Name = "commandText";
-            this.commandText.Size = new System.Drawing.Size(442, 111);
+            this.commandText.Size = new System.Drawing.Size(442, 95);
             this.commandText.TabIndex = 22;
-            this.commandText.Text = "Click \"Write\"";
+            this.commandText.Text = "Click \"Write\" before \"Compute\"";
             // 
             // outputText
             // 
@@ -309,7 +311,7 @@
             // useELF
             // 
             this.useELF.AutoSize = true;
-            this.useELF.Location = new System.Drawing.Point(60, 36);
+            this.useELF.Location = new System.Drawing.Point(60, 37);
             this.useELF.Name = "useELF";
             this.useELF.Size = new System.Drawing.Size(67, 17);
             this.useELF.TabIndex = 28;
@@ -348,7 +350,6 @@
             this.computeButton.TabIndex = 31;
             this.computeButton.Text = "Compute";
             this.computeButton.UseVisualStyleBackColor = true;
-            this.computeButton.Visible = false;
             this.computeButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label1
@@ -360,11 +361,31 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "By TiniVi";
             // 
+            // fwNumber
+            // 
+            this.fwNumber.Enabled = false;
+            this.fwNumber.Location = new System.Drawing.Point(150, 201);
+            this.fwNumber.Name = "fwNumber";
+            this.fwNumber.Size = new System.Drawing.Size(15, 20);
+            this.fwNumber.TabIndex = 33;
+            this.fwNumber.Text = "4";
+            // 
+            // fwLabel
+            // 
+            this.fwLabel.AutoSize = true;
+            this.fwLabel.Location = new System.Drawing.Point(104, 204);
+            this.fwLabel.Name = "fwLabel";
+            this.fwLabel.Size = new System.Drawing.Size(49, 13);
+            this.fwLabel.TabIndex = 34;
+            this.fwLabel.Text = "Firmware";
+            // 
             // CCCB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 327);
+            this.Controls.Add(this.fwNumber);
+            this.Controls.Add(this.fwLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.computeButton);
             this.Controls.Add(this.commandText);
@@ -438,6 +459,8 @@
         private System.Windows.Forms.Button outputButton;
         private System.Windows.Forms.Button computeButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox fwNumber;
+        private System.Windows.Forms.Label fwLabel;
     }
 }
 
