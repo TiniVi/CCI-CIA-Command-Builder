@@ -195,7 +195,7 @@ namespace CommandBuilder
                 commandText.AppendText(quotation.Text);
                 commandText.AppendText(manualText.Text);
                 commandText.AppendText(quotation.Text);
-                commandText.AppendText(":1 ");
+                commandText.AppendText(":7 ");
             }
             if (useManual.Checked == true)
             {
@@ -203,7 +203,7 @@ namespace CommandBuilder
                 commandText.AppendText(quotation.Text);
                 commandText.AppendText(updateText.Text);
                 commandText.AppendText(quotation.Text);
-                commandText.AppendText(":7 ");
+                commandText.AppendText(":1 ");
             }
         }
 
