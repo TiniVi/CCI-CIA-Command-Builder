@@ -86,7 +86,7 @@
             this.ciaMode.TabStop = true;
             this.ciaMode.Text = "CIA";
             this.ciaMode.UseVisualStyleBackColor = true;
-            this.ciaMode.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.ciaMode.CheckedChanged += new System.EventHandler(this.ciaMode_CheckedChanged);
             // 
             // exheaderButton
             // 
@@ -96,7 +96,7 @@
             this.exheaderButton.TabIndex = 2;
             this.exheaderButton.Text = "ExHeader";
             this.exheaderButton.UseVisualStyleBackColor = true;
-            this.exheaderButton.Click += new System.EventHandler(this.button1_Click);
+            this.exheaderButton.Click += new System.EventHandler(this.exheaderButton_Click);
             // 
             // codeButton
             // 
@@ -106,7 +106,7 @@
             this.codeButton.TabIndex = 3;
             this.codeButton.Text = ".code/ELF";
             this.codeButton.UseVisualStyleBackColor = true;
-            this.codeButton.Click += new System.EventHandler(this.button2_Click);
+            this.codeButton.Click += new System.EventHandler(this.codeButton_Click);
             // 
             // bannerButton
             // 
@@ -116,7 +116,7 @@
             this.bannerButton.TabIndex = 4;
             this.bannerButton.Text = "Banner";
             this.bannerButton.UseVisualStyleBackColor = true;
-            this.bannerButton.Click += new System.EventHandler(this.button3_Click);
+            this.bannerButton.Click += new System.EventHandler(this.bannerButton_Click);
             // 
             // iconButton
             // 
@@ -126,7 +126,7 @@
             this.iconButton.TabIndex = 5;
             this.iconButton.Text = "Icon";
             this.iconButton.UseVisualStyleBackColor = true;
-            this.iconButton.Click += new System.EventHandler(this.button4_Click);
+            this.iconButton.Click += new System.EventHandler(this.iconButton_Click);
             // 
             // rsfButton
             // 
@@ -136,7 +136,7 @@
             this.rsfButton.TabIndex = 6;
             this.rsfButton.Text = "rsf";
             this.rsfButton.UseVisualStyleBackColor = true;
-            this.rsfButton.Click += new System.EventHandler(this.button5_Click);
+            this.rsfButton.Click += new System.EventHandler(this.rsfButton_Click);
             // 
             // exheaderText
             // 
@@ -182,7 +182,7 @@
             this.romfsButton.TabIndex = 12;
             this.romfsButton.Text = "RomFS";
             this.romfsButton.UseVisualStyleBackColor = true;
-            this.romfsButton.Click += new System.EventHandler(this.button6_Click);
+            this.romfsButton.Click += new System.EventHandler(this.romfsButton_Click);
             // 
             // manualButton
             // 
@@ -193,7 +193,7 @@
             this.manualButton.TabIndex = 13;
             this.manualButton.Text = "Manual";
             this.manualButton.UseVisualStyleBackColor = true;
-            this.manualButton.Click += new System.EventHandler(this.button7_Click);
+            this.manualButton.Click += new System.EventHandler(this.manualButton_Click);
             // 
             // updateButton
             // 
@@ -204,7 +204,7 @@
             this.updateButton.TabIndex = 14;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
-            this.updateButton.Click += new System.EventHandler(this.button8_Click);
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // useManual
             // 
@@ -215,7 +215,7 @@
             this.useManual.TabIndex = 15;
             this.useManual.Text = "Use Manual Partition";
             this.useManual.UseVisualStyleBackColor = true;
-            this.useManual.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.useManual.CheckedChanged += new System.EventHandler(this.useManual_CheckedChanged);
             // 
             // useUpdate
             // 
@@ -226,7 +226,7 @@
             this.useUpdate.TabIndex = 16;
             this.useUpdate.Text = "Use Update Partition";
             this.useUpdate.UseVisualStyleBackColor = true;
-            this.useUpdate.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.useUpdate.CheckedChanged += new System.EventHandler(this.useUpdate_CheckedChanged);
             // 
             // useRomFS
             // 
@@ -237,7 +237,7 @@
             this.useRomFS.TabIndex = 17;
             this.useRomFS.Text = "Load RomFS from File";
             this.useRomFS.UseVisualStyleBackColor = true;
-            this.useRomFS.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            this.useRomFS.CheckedChanged += new System.EventHandler(this.useRomFS_CheckedChanged);
             // 
             // manualText
             // 
@@ -306,7 +306,7 @@
             this.createCommand.TabIndex = 27;
             this.createCommand.Text = "Write";
             this.createCommand.UseVisualStyleBackColor = true;
-            this.createCommand.Click += new System.EventHandler(this.button9_Click);
+            this.createCommand.Click += new System.EventHandler(this.createCommand_Click);
             // 
             // useELF
             // 
@@ -317,7 +317,7 @@
             this.useELF.TabIndex = 28;
             this.useELF.Text = "Use ELF";
             this.useELF.UseVisualStyleBackColor = true;
-            this.useELF.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.useELF.CheckedChanged += new System.EventHandler(this.useELF_CheckedChanged);
             // 
             // openFileDialog1
             // 
@@ -350,7 +350,7 @@
             this.computeButton.TabIndex = 31;
             this.computeButton.Text = "Compute";
             this.computeButton.UseVisualStyleBackColor = true;
-            this.computeButton.Click += new System.EventHandler(this.button1_Click_1);
+            this.computeButton.Click += new System.EventHandler(this.computeButton_Click);
             // 
             // label1
             // 

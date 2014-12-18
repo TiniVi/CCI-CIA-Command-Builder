@@ -26,7 +26,7 @@ namespace CommandBuilder
         SaveFileDialog sfd = new SaveFileDialog();
 
        //This is where buttons call for file locations
-        private void button1_Click(object sender, EventArgs e)
+        private void exheaderButton_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -34,7 +34,7 @@ namespace CommandBuilder
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void codeButton_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -42,7 +42,7 @@ namespace CommandBuilder
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void bannerButton_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -50,7 +50,7 @@ namespace CommandBuilder
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void iconButton_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -58,7 +58,7 @@ namespace CommandBuilder
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void rsfButton_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -66,7 +66,7 @@ namespace CommandBuilder
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void romfsButton_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -74,7 +74,7 @@ namespace CommandBuilder
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void manualButton_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -82,7 +82,7 @@ namespace CommandBuilder
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void updateButton_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -91,40 +91,40 @@ namespace CommandBuilder
         }
 
         //Make buttons and textboxes enabled
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void useManual_CheckedChanged(object sender, EventArgs e)
         {
             manualButton.Enabled = useManual.Checked;
             manualText.Enabled = useManual.Checked;
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void useUpdate_CheckedChanged(object sender, EventArgs e)
         {
             updateText.Enabled = useUpdate.Checked;
             updateButton.Enabled = useUpdate.Checked;
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        private void useRomFS_CheckedChanged(object sender, EventArgs e)
         {
             romfsButton.Enabled = useRomFS.Checked;
             romfsText.Enabled = useRomFS.Checked;
         }
 
         //If an ELF is used:
-        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        private void useELF_CheckedChanged(object sender, EventArgs e)
         {
             exheaderButton.Enabled = !useELF.Checked;
             exheaderText.Enabled = !useELF.Checked;
 
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void ciaMode_CheckedChanged(object sender, EventArgs e)
         {
             alignwr.Enabled = !ciaMode.Checked;
             fwNumber.Enabled = ciaMode.Checked;
         }
         
         //Text is copied to the textbox for the output command.
-        private void button9_Click(object sender, EventArgs e)
+        private void createCommand_Click(object sender, EventArgs e)
         {
             if (cciMode.Checked == true)
             {
@@ -215,7 +215,7 @@ namespace CommandBuilder
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void computeButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("cmd", "/C" + commandText.Text);
         }
