@@ -214,10 +214,12 @@ namespace CommandBuilder
                 outputText.Text = sfd.FileName;
             }
         }
-
+        //send commands to cmd prompt (not working)
         private void computeButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("cmd", "/C" + commandText.Text);
         }
     }
 }
+
+//todo: rsf builder, better romfs generation
