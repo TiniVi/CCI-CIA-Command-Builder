@@ -63,6 +63,9 @@
             this.Signature = new System.Windows.Forms.Label();
             this.fwNumber = new System.Windows.Forms.TextBox();
             this.fwLabel = new System.Windows.Forms.Label();
+            this.useFW = new System.Windows.Forms.CheckBox();
+            this.target = new System.Windows.Forms.Label();
+            this.targetType = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cciMode
@@ -379,11 +382,42 @@
             this.fwLabel.TabIndex = 34;
             this.fwLabel.Text = "Firmware";
             // 
+            // useFW
+            // 
+            this.useFW.AutoSize = true;
+            this.useFW.Location = new System.Drawing.Point(134, 37);
+            this.useFW.Name = "useFW";
+            this.useFW.Size = new System.Drawing.Size(121, 17);
+            this.useFW.TabIndex = 35;
+            this.useFW.Text = "Use Firmware Desc.";
+            this.useFW.UseVisualStyleBackColor = true;
+            this.useFW.CheckedChanged += new System.EventHandler(this.useFW_CheckedChanged);
+            // 
+            // target
+            // 
+            this.target.AutoSize = true;
+            this.target.Location = new System.Drawing.Point(170, 204);
+            this.target.Name = "target";
+            this.target.Size = new System.Drawing.Size(101, 13);
+            this.target.TabIndex = 36;
+            this.target.Text = "Target Type (t, d, p)";
+            // 
+            // targetType
+            // 
+            this.targetType.Location = new System.Drawing.Point(269, 201);
+            this.targetType.Name = "targetType";
+            this.targetType.Size = new System.Drawing.Size(15, 20);
+            this.targetType.TabIndex = 37;
+            this.targetType.Text = "d";
+            // 
             // CCCB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 327);
+            this.Controls.Add(this.targetType);
+            this.Controls.Add(this.target);
+            this.Controls.Add(this.useFW);
             this.Controls.Add(this.fwNumber);
             this.Controls.Add(this.fwLabel);
             this.Controls.Add(this.Signature);
@@ -461,6 +495,9 @@
         private System.Windows.Forms.Label Signature;
         private System.Windows.Forms.TextBox fwNumber;
         private System.Windows.Forms.Label fwLabel;
+        private System.Windows.Forms.CheckBox useFW;
+        private System.Windows.Forms.Label target;
+        private System.Windows.Forms.TextBox targetType;
     }
 }
 

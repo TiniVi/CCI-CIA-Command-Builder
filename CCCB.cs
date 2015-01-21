@@ -120,7 +120,6 @@ namespace CommandBuilder
         private void ciaMode_CheckedChanged(object sender, EventArgs e)
         {
             alignwr.Enabled = !ciaMode.Checked;
-            fwNumber.Enabled = ciaMode.Checked;
         }
         
         //Text is copied to the textbox for the output command.
@@ -138,10 +137,14 @@ namespace CommandBuilder
 
             if (ciaMode.Checked == true)
             {
-                commandText.Text = "makerom -f cia -desc app:" + fwNumber.Text;
-                commandText.AppendText(" -target d ");
+                commandText.Text = "makerom -f cia";
+                commandText.AppendText(" -target " + targetType.Text);
             }
-            commandText.AppendText("-rsf ");
+            if (useFW.Checked == true)
+            {
+                commandText.AppendText("-desc app:" + fwNumber.Text);
+            }
+            commandText.AppendText(" -rsf ");
             commandText.AppendText(quotation.Text);
             commandText.AppendText(rsfText.Text);
             commandText.AppendText(quotation.Text);
@@ -217,9 +220,12 @@ namespace CommandBuilder
         //send commands to cmd prompt
         private void computeButton_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("C:/Windows/System32/cmd.exe", "/C" + commandText.Text);
+            System.Diagnostics.Process.Start("C:/Windows/System32/cmd.exe", "/C" + commandText.Text + "& pause"); //added pause so you can read output errors
+        }
+
+        private void useFW_CheckedChanged(object sender, EventArgs e)
+        {
+            fwNumber.Enabled = useFW.Checked;
         }
     }
 }
-
-//todo: rsf builder, better romfs generation
